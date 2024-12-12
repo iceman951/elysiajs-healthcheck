@@ -1,0 +1,20 @@
+{
+  "name": "elysia-cron",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cron": "^1.1.1",
+    "@elysiajs/swagger": "^1.1.6",
+    "axios": "^1.7.9",
+    "elysia": "^1.1.26",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17",
+    "bun-types": "^1.1.38"
+  },
+  "module": "src/index.js"
+}

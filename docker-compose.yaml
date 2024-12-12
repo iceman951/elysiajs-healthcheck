@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  elysia-cron:
+    image: elysia-cron:dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "8666:8666"
+    volumes:
+      - .:/app
+    command: ["bun", "src/index.ts"]
